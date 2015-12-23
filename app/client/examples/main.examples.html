@@ -1,0 +1,35 @@
+<template name="Examples">
+  <div class="row">
+    <div class="col-md-12">
+      <h1 class="text-center">
+        jss: sigma
+      </h1>
+    </div>
+    <div class="col-md-4">
+      <ul class="nav nav-pills nav-stacked">
+        <li role="presentation" class="active">
+          <a href="#example-basic"
+             aria-controls="example-basic"
+             role="tab"
+             data-toggle="tab">
+            Basic
+          </a>
+        </li>
+        <li role="presentation">
+          <a href="#example-drag-nodes"
+             aria-controls="example-drag-nodes"
+             role="tab"
+             data-toggle="tab">
+            Drag nodes
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="col-md-6">
+      <div class="tab-content">
+        {{> ExampleBasic}}
+        {{> ExampleDragNodes}}
+      </div>
+    </div>
+  </div>
+</template>
