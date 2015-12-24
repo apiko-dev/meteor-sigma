@@ -1,4 +1,4 @@
-Template.ExampleDragNodes.onRendered(function () {
+Template.ExampleEvents.onRendered(function () {
   const N = 100;
   const E = 500;
   const g = {
@@ -14,7 +14,7 @@ Template.ExampleDragNodes.onRendered(function () {
       x: Math.random(),
       y: Math.random(),
       size: Math.random(),
-      color: '#ccc'
+      color: '#666'
     });
   }
 
@@ -34,9 +34,14 @@ Template.ExampleDragNodes.onRendered(function () {
     container: this.find('.graph')
   });
 
-  // TODO: FIX
-  // Initialize the dragNodes plugin:
-  // Error: The sigma.plugins.dragNodes is not compatible with the WebGL renderer
-  // at Object.sigma.plugins.dragNodes (sigma.plugins.dragNodes.js:35)
-  //sigma.plugins.dragNodes(s, s.renderers[0]);
+  // Bind the events:
+  s.bind('overNode outNode clickNode doubleClickNode rightClickNode', function(e) {
+    console.log(e.type, e.data.node.label, e.data.captor);
+  });
+  s.bind('clickStage', function(e) {
+    console.log(e.type, e.data.captor);
+  });
+  s.bind('doubleClickStage rightClickStage', function(e) {
+    console.log(e.type, e.data.captor);
+  });
 });

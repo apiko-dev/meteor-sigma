@@ -7,6 +7,14 @@
     </div>
     <div class="col-md-4">
       <ul class="nav nav-pills nav-stacked">
+        <li role="presentation">
+          <a href="#example-animate"
+             aria-controls="example-animate"
+             role="tab"
+             data-toggle="tab">
+            Animate
+          </a>
+        </li>
         <li role="presentation" class="active">
           <a href="#example-basic"
              aria-controls="example-basic"
@@ -23,12 +31,40 @@
             Drag nodes
           </a>
         </li>
+        <li role="presentation">
+          <a href="#edge-renderers"
+             aria-controls="edge-renderers"
+             role="tab"
+             data-toggle="tab">
+            Events
+          </a>
+        </li>
+        <li role="presentation">
+          <a href="#example-events"
+             aria-controls="example-events"
+             role="tab"
+             data-toggle="tab">
+            Events
+          </a>
+        </li>
+        <li role="presentation">
+          <a href="#example-force"
+             aria-controls="example-force"
+             role="tab"
+             data-toggle="tab">
+            Force
+          </a>
+        </li>
       </ul>
     </div>
     <div class="col-md-6">
       <div class="tab-content">
         {{> ExampleBasic}}
+        {{> ExampleAnimate}}
         {{> ExampleDragNodes}}
+        {{> ExampleEdgeEenderers}}
+        {{> ExampleEvents}}
+        {{> ExampleForce}}
       </div>
     </div>
   </div>

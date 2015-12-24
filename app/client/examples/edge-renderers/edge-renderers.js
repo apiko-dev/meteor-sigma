@@ -1,4 +1,4 @@
-Template.ExampleDragNodes.onRendered(function () {
+Template.ExampleEdgeEenderers.onRendered(function () {
   const N = 100;
   const E = 500;
   const g = {
@@ -14,7 +14,7 @@ Template.ExampleDragNodes.onRendered(function () {
       x: Math.random(),
       y: Math.random(),
       size: Math.random(),
-      color: '#ccc'
+      color: '#666'
     });
   }
 
@@ -24,19 +24,17 @@ Template.ExampleDragNodes.onRendered(function () {
       source: 'n' + (Math.random() * N | 0),
       target: 'n' + (Math.random() * N | 0),
       size: Math.random(),
-      color: '#ccc'
+      color: '#ccc',
+      type: ['curve', 'arrow', 'curvedArrow'][Math.random() * 3 | 0]
     });
   }
 
   // Instantiate sigma:
-  const s = new sigma({
+  new sigma({
     graph: g,
-    container: this.find('.graph')
+    renderer: {
+      container: this.find('.graph'),
+      type: 'canvas'
+    }
   });
-
-  // TODO: FIX
-  // Initialize the dragNodes plugin:
-  // Error: The sigma.plugins.dragNodes is not compatible with the WebGL renderer
-  // at Object.sigma.plugins.dragNodes (sigma.plugins.dragNodes.js:35)
-  //sigma.plugins.dragNodes(s, s.renderers[0]);
 });
