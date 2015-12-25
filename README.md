@@ -13,7 +13,7 @@ How to install: `meteor add jss:sigma`
 the documentation is available in the
 [GitHub Wiki](https://github.com/jacomyal/sigma.js/wiki).
 
-Usage examples: [sigma.meteor.com](http://sigma.meteor.com/).
+Usage examples: [jss-sigma.meteor.com](http://jss-sigma.meteor.com/).
 
 
 ## License
