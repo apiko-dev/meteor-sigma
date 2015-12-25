@@ -1,6 +1,6 @@
 Package.describe({
   name: 'jss:sigma',
-  version: '1.0.3',
+  version: '1.0.3_1',
   summary: 'Sigma is a library dedicated to graph drawing.',
   git: 'https://github.com/JSSolutions/meteor-sigma',
   documentation: 'README.md'

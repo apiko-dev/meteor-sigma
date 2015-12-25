@@ -10,3 +10,12 @@
   right: 0;
   position: absolute;
 }
+
+/*.tab-content > .tab-pane {*/
+  /*display: block;*/
+  /*visibility: hidden;*/
+/*}*/
+
+/*.tab-content > .active {*/
+  /*visibility: visible;*/
+/*}*/

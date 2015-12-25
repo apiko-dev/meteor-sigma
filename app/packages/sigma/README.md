@@ -1,19 +1,15 @@
 # meteor-sigma
 
-Sigma is a library dedicated to graph drawing. It makes easy to publish networks
-on Web pages, and allows developers to integrate network exploration in rich Web
-applications.
+Sigma is a library dedicated to graph drawing. It makes easy to publish networks on Web pages, and allows developers to integrate network exploration in rich Web applications.
 
 
 ## Usage
 
 How to install: `meteor add jss:sigma`
 
-[The website](http://sigmajs.org) provides a global overview of the project, and
-the documentation is available in the
-[GitHub Wiki](https://github.com/jacomyal/sigma.js/wiki).
+[The website](http://sigmajs.org) provides a global overview of the project, and the documentation is available in the [GitHub Wiki](https://github.com/jacomyal/sigma.js/wiki).
 
-Usage examples: [sigma.meteor.com](http://sigma.meteor.com/).
+Usage examples: [jss-sigma.meteor.com](http://jss-sigma.meteor.com/).
 
 
 ## License
